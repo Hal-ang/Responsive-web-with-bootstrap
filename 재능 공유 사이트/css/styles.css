@@ -56,6 +56,9 @@ body {
 .alert {
   margin-top: 50px;
   margin-bottom: 16px;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .info-container {
@@ -85,4 +88,58 @@ body {
 .user span {
   font-size: 13px;
   color: #4A4A4A;
+}
+
+.container {
+  width: 100%;
+}
+
+
+
+@media (min-width: 576px) {
+  .info-container {
+    width: 350px;
+  }
+  .alert {
+    max-width: 400px;
+  }
+}
+/* medium */
+@media (min-width: 768px) {
+  .info-container {
+    width: 300px;
+    padding-left: 0;
+  }
+  .course {
+    width: 300px;
+  }
+  .alert {
+    max-width: 710px;
+  }
+
+}
+/* large */
+@media (min-width: 992px) {
+  .info-container {
+    width: 287px;
+  }
+  .course {
+    width: 287px;
+  }
+  .alert{
+    max-width: 950px;
+  }
+}
+
+/* extra large */
+@media (min-width: 1200px) {
+  .info-container {
+    width: 287px;
+  }
+  .alert {
+    max-width: 1200px;
+  }
+  .course {
+    width: 287px;
+  }
 }
